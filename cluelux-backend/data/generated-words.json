@@ -1,0 +1,912 @@
+[
+  {
+    "date": "2025-11-14",
+    "word": "FOREST",
+    "length": 6,
+    "type": "noun",
+    "category": "nature",
+    "hints": [
+      "A natural area densely packed with trees and wildlife",
+      "Covers large areas of land, home to deer, bears, and countless bird species",
+      "Robin Hood lived in Sherwood, Little Red Riding Hood walked through one",
+      "Wooded ecosystem that produces oxygen and provides timber for construction",
+      "Rhymes with 'poorest' and sounds like 'for rest'"
+    ]
+  },
+  {
+    "date": "2025-11-15",
+    "word": "LIBRARY",
+    "length": 7,
+    "type": "noun",
+    "category": "place",
+    "hints": [
+      "A public building where people go to access books and information",
+      "Usually has reading rooms, quiet areas, and helpful staff called librarians",
+      "The famous one in Alexandria was considered one of the wonders of the ancient world",
+      "A collection of books and materials organized for public use and borrowing",
+      "Rhymes with 'primary' and often associated with being 'literary'"
+    ]
+  },
+  {
+    "date": "2025-11-16",
+    "word": "WIZARD",
+    "length": 6,
+    "type": "noun",
+    "category": "mystical",
+    "hints": [
+      "A person who practices magic and casts spells",
+      "Often depicted wearing robes and a pointed hat, carrying a staff",
+      "Gandalf from Lord of the Rings and Dumbledore from Harry Potter are famous examples",
+      "A magical practitioner who uses supernatural powers, often appearing in fantasy stories",
+      "Rhymes with 'blizzard' and sounds like someone who is very skilled"
+    ]
+  },
+  {
+    "date": "2025-11-17",
+    "word": "LIGHTNING",
+    "length": 9,
+    "type": "noun",
+    "category": "weather",
+    "hints": [
+      "A weather phenomenon involving electricity",
+      "Occurs during thunderstorms, often accompanied by thunder",
+      "Ben Franklin famously studied it with his kite experiment",
+      "Electrical discharge that travels between clouds and ground during storms",
+      "Rhymes with 'frightening' and 'brightening'"
+    ]
+  },
+  {
+    "date": "2025-11-18",
+    "word": "CASTLE",
+    "length": 6,
+    "type": "noun",
+    "category": "architecture",
+    "hints": [
+      "A large fortified building from medieval times",
+      "Built on hills or strategic locations to defend against enemies",
+      "Neuschwanstein in Germany inspired Disney's Sleeping Beauty version",
+      "Stone fortress where kings and nobles lived, surrounded by walls",
+      "Rhymes with 'hassle' and sounds like a chess piece"
+    ]
+  },
+  {
+    "date": "2025-11-19",
+    "word": "TWILIGHT",
+    "length": 8,
+    "type": "noun",
+    "category": "time",
+    "hints": [
+      "A time of day when light is dim and transitional",
+      "Occurs twice daily, just after sunset and before sunrise",
+      "Stephenie Meyer wrote a famous vampire romance series with this title",
+      "The period when the sun is below the horizon but sky isn't completely dark",
+      "Rhymes with 'highlight' and sounds like 'twice light'"
+    ]
+  },
+  {
+    "date": "2025-11-20",
+    "word": "ASTEROID",
+    "length": 8,
+    "type": "noun",
+    "category": "space",
+    "hints": [
+      "A rocky object found in outer space",
+      "Orbits the Sun, mostly between Mars and Jupiter",
+      "Scientists believe one killed the dinosaurs 66 million years ago",
+      "Small rocky body that travels around the Sun in the solar system",
+      "Sounds like a Greek word meaning 'star-like' in appearance"
+    ]
+  },
+  {
+    "date": "2025-11-21",
+    "word": "PHOENIX",
+    "length": 7,
+    "type": "noun",
+    "category": "mythical",
+    "hints": [
+      "A mythical creature from ancient folklore and legends",
+      "Said to burst into flames and be reborn from its own ashes",
+      "Featured prominently in Harry Potter as Dumbledore's companion Fawkes",
+      "Immortal fire bird that symbolizes renewal and resurrection",
+      "Sounds like 'fee nicks' and rhymes with nothing in English"
+    ]
+  },
+  {
+    "date": "2025-11-22",
+    "word": "TELESCOPE",
+    "length": 9,
+    "type": "noun",
+    "category": "technology",
+    "hints": [
+      "Scientific instrument used for observing distant objects in space",
+      "Found in observatories and used by astronomers to study stars and planets",
+      "Galileo used one to discover Jupiter's moons and support heliocentrism",
+      "Optical device that magnifies faraway celestial bodies for detailed viewing",
+      "Starts with 'tele' meaning distant, ends like 'scope' meaning to see"
+    ]
+  },
+  {
+    "date": "2025-11-23",
+    "word": "SANCTUARY",
+    "length": 9,
+    "type": "noun",
+    "category": "place",
+    "hints": [
+      "A place that provides safety and protection from danger",
+      "Often found in churches, temples, or nature reserves where harm is forbidden",
+      "Quasimodo claimed this right at Notre-Dame Cathedral in Victor Hugo's famous novel",
+      "Sacred refuge where people or animals cannot be harmed or disturbed",
+      "Rhymes with 'temporary' and contains the word that means 'holy' in Latin"
+    ]
+  },
+  {
+    "date": "2025-11-24",
+    "word": "GRAVITY",
+    "length": 7,
+    "type": "noun",
+    "category": "physics",
+    "hints": [
+      "A fundamental force in physics ⚛️",
+      "Keeps your feet on the ground and planets in orbit",
+      "What Newton discovered when an apple fell on his head",
+      "The attraction between masses that pulls objects toward Earth",
+      "From Latin 'gravitas' meaning weight or seriousness"
+    ]
+  },
+  {
+    "date": "2025-11-25",
+    "word": "OXYGEN",
+    "length": 6,
+    "type": "noun",
+    "category": "chemistry",
+    "hints": [
+      "Essential element found throughout Earth's atmosphere and water 🌍",
+      "Every breath you take contains roughly 21% of this gas",
+      "Apollo 13 crew faced a life-threatening shortage of this",
+      "Colorless gas that supports combustion and enables cellular respiration",
+      "Six letters, chemical symbol O, rhymes with 'nitrogen'"
+    ]
+  },
+  {
+    "date": "2025-11-26",
+    "word": "WATERFALL",
+    "length": 10,
+    "type": "noun",
+    "category": "nature",
+    "hints": [
+      "A natural formation found in landscapes and geography 🏞️",
+      "Hikers seek them out, photographers capture their beauty",
+      "Angel Falls in Venezuela holds the world record for this",
+      "Water cascading vertically over a cliff or rock face",
+      "Nine letters, compound word with H2O plus autumn action"
+    ]
+  },
+  {
+    "date": "2025-11-27",
+    "word": "TRIUMPH",
+    "length": 7,
+    "type": "noun",
+    "category": "victory",
+    "hints": [
+      "A powerful feeling experienced after achieving something difficult 🏆",
+      "Athletes raise their fists in this moment of glory",
+      "Rocky Balboa's iconic moment at the top of Philadelphia's steps",
+      "A great victory or achievement after struggle or competition",
+      "From Latin meaning 'to celebrate a victory in procession'"
+    ]
+  },
+  {
+    "date": "2025-11-28",
+    "word": "VOLCANO",
+    "length": 7,
+    "type": "noun",
+    "category": "geology",
+    "hints": [
+      "A geological formation found on Earth's surface 🌋",
+      "Scientists monitor these for eruptions and seismic activity",
+      "Mount Vesuvius famously buried Pompeii in ancient times",
+      "A rupture in Earth's crust that expels lava",
+      "From Roman god Vulcan, the divine blacksmith"
+    ]
+  },
+  {
+    "date": "2025-11-29",
+    "word": "JUSTICE",
+    "length": 7,
+    "type": "abstract_noun",
+    "category": "virtue",
+    "hints": [
+      "A fundamental principle in law and morality ⚖️",
+      "What courts aim to deliver and protesters march for",
+      "Lady Liberty holds scales representing this ideal",
+      "Fair treatment and rightful consequences for actions",
+      "Rhymes with 'just this' when said quickly"
+    ]
+  },
+  {
+    "date": "2025-11-30",
+    "word": "LABYRINTH",
+    "length": 9,
+    "type": "noun",
+    "category": "structure",
+    "hints": [
+      "An intricate architectural structure designed to confuse visitors 🏛️",
+      "Ancient kings built these to trap intruders or monsters",
+      "The Minotaur was imprisoned in one beneath Crete",
+      "A complex maze with winding paths and dead ends",
+      "From Greek meaning 'double-headed axe building'"
+    ]
+  },
+  {
+    "date": "2025-12-01",
+    "word": "WISDOM",
+    "length": 6,
+    "type": "abstract_noun",
+    "category": "virtue",
+    "hints": [
+      "A quality gained through experience and deep understanding 🧠",
+      "Sought by philosophers, valued by elders, guides important decisions",
+      "King Solomon famously asked God for this instead of riches",
+      "Sound judgment and insight earned through knowledge and experience",
+      "From Old English, literally meaning 'knowledge' or 'learning'"
+    ]
+  },
+  {
+    "date": "2025-12-02",
+    "word": "SYMPHONY",
+    "length": 8,
+    "type": "noun",
+    "category": "music",
+    "hints": [
+      "A masterpiece of classical music 🎼",
+      "Performed by full orchestras in concert halls worldwide",
+      "Beethoven's 9th includes 'Ode to Joy' in its finale",
+      "Extended musical composition with multiple movements for orchestra",
+      "From Greek meaning 'sounding together' or 'harmony'"
+    ]
+  },
+  {
+    "date": "2025-12-03",
+    "word": "WHIRLWIND",
+    "length": 9,
+    "type": "noun",
+    "category": "weather",
+    "hints": [
+      "A powerful weather phenomenon that spins violently 🌪️",
+      "Storm chasers track these across the Great Plains",
+      "Dorothy's house got swept up in one in Oz",
+      "A rapidly rotating column of air extending from clouds",
+      "Two words merged: spinning motion plus moving air"
+    ]
+  },
+  {
+    "date": "2025-12-04",
+    "word": "METEOR",
+    "length": 6,
+    "type": "noun",
+    "category": "space",
+    "hints": [
+      "Celestial object that enters Earth's atmosphere 🌌",
+      "Creates brilliant streaks of light during nighttime sky watching",
+      "What killed the dinosaurs according to most scientists",
+      "Space rock that burns up while falling through atmosphere",
+      "From Greek meaning 'high in the air' or 'atmospheric phenomenon'"
+    ]
+  },
+  {
+    "date": "2025-12-05",
+    "word": "CROCODILE",
+    "length": 9,
+    "type": "noun",
+    "category": "animal",
+    "hints": [
+      "Large reptile found in tropical waters worldwide 🐊",
+      "Lurks in rivers and swamps, ambushing prey at water's edge",
+      "Captain Hook's nemesis that swallowed a ticking clock in Peter Pan",
+      "Semi-aquatic predator with powerful jaws and armored scaly skin",
+      "From Greek meaning 'pebble worm' referring to its appearance"
+    ]
+  },
+  {
+    "date": "2025-12-06",
+    "word": "COURAGE",
+    "length": 7,
+    "type": "abstract_noun",
+    "category": "virtue",
+    "hints": [
+      "A virtue that heroes and everyday people both need 💪",
+      "Required when facing danger, uncertainty, or difficult decisions",
+      "The Cowardly Lion searched for this in Oz",
+      "Bravery in the face of fear or adversity",
+      "From French meaning 'heart' - the seat of emotion"
+    ]
+  },
+  {
+    "date": "2025-12-07",
+    "word": "DARKNESS",
+    "length": 8,
+    "type": "noun",
+    "category": "abstract",
+    "hints": [
+      "The absence of light or illumination 🌑",
+      "What photographers use to develop film or astronomers seek",
+      "Charlie Murphy's famous sketch about Prince on Chappelle's Show",
+      "Complete or partial absence of visible light",
+      "Rhymes with 'starkness' and shares the suffix with sadness"
+    ]
+  },
+  {
+    "date": "2025-12-08",
+    "word": "DIAMOND",
+    "length": 7,
+    "type": "noun",
+    "category": "gem",
+    "hints": [
+      "A precious gemstone formed deep within the Earth 💎",
+      "Cut and polished for jewelry, especially engagement rings",
+      "Marilyn Monroe sang they're a girl's best friend",
+      "The hardest natural substance, made of pure carbon",
+      "Seven letters, rhymes with 'island' without the 'is'"
+    ]
+  },
+  {
+    "date": "2025-12-09",
+    "word": "DREAMS",
+    "length": 6,
+    "type": "noun",
+    "category": "emotion",
+    "hints": [
+      "Realm of sleep psychology and personal aspirations 💭",
+      "Occur during REM cycles and motivate life goals",
+      "Martin Luther King Jr. had a famous one",
+      "Nighttime visions or cherished hopes for the future",
+      "Six letters, rhymes with 'streams' and 'seems'"
+    ]
+  },
+  {
+    "date": "2025-12-10",
+    "word": "HURRICANE",
+    "length": 9,
+    "type": "noun",
+    "category": "weather",
+    "hints": [
+      "A powerful weather phenomenon born over warm ocean waters 🌊",
+      "Meteorologists track its path using satellite imagery and wind measurements",
+      "Katrina devastated New Orleans in 2005, changing the city forever",
+      "Massive rotating storm system with winds exceeding 74 mph",
+      "From Spanish 'huracán,' meaning the Caribbean god of storms"
+    ]
+  },
+  {
+    "date": "2025-12-11",
+    "word": "INFINITY",
+    "length": 8,
+    "type": "abstract_noun",
+    "category": "concept",
+    "hints": [
+      "A mathematical and philosophical concept beyond measurement ∞",
+      "What calculus students encounter when limits approach boundless values",
+      "Buzz Lightyear's famous destination paired with 'beyond'",
+      "Limitless or endless in space, extent, or size",
+      "From Latin meaning 'without end or boundary'"
+    ]
+  },
+  {
+    "date": "2025-12-12",
+    "word": "QUANTUM",
+    "length": 7,
+    "type": "noun",
+    "category": "physics",
+    "hints": [
+      "A fundamental concept in modern physics ⚛️",
+      "Describes energy packets and particle behavior at atomic scales",
+      "Scott Lang shrinks to subatomic size in Marvel's Ant-Man",
+      "The smallest possible discrete unit of any physical property",
+      "From Latin meaning 'how much' or 'how great'"
+    ]
+  },
+  {
+    "date": "2025-12-13",
+    "word": "MEDIEVAL",
+    "length": 8,
+    "type": "adjective",
+    "category": "historical",
+    "hints": [
+      "Describes a specific historical time period ⚔️",
+      "Used to describe castles, knights, and feudal systems",
+      "The era when King Arthur and his Round Table supposedly existed",
+      "Relating to the Middle Ages, roughly 500-1500 CE",
+      "Eight letters, starts with 'medi' like medicine"
+    ]
+  },
+  {
+    "date": "2025-12-14",
+    "word": "DRAGON",
+    "length": 6,
+    "type": "noun",
+    "category": "mythical",
+    "hints": [
+      "A legendary creature from mythology and folklore 🐲",
+      "Guards treasure in caves, breathes fire in ancient tales",
+      "Smaug terrorized Lake-town in Tolkien's Middle-earth",
+      "A large serpentine beast with wings, claws, and scales",
+      "Six letters, starts with D, rhymes with 'wagon'"
+    ]
+  },
+  {
+    "date": "2025-12-15",
+    "word": "ALCHEMY",
+    "length": 7,
+    "type": "noun",
+    "category": "mystical",
+    "hints": [
+      "Medieval practice blending chemistry, philosophy, and magic ⚗️",
+      "Practitioners sought to transform base metals into gold",
+      "Harry Potter studied this subject under Professor Snape",
+      "Ancient pseudoscience attempting to create the philosopher's stone",
+      "Seven letters, starts with 'AL', ends with 'MY'"
+    ]
+  },
+  {
+    "date": "2025-12-16",
+    "word": "TEMPLE",
+    "length": 6,
+    "type": "noun",
+    "category": "architecture",
+    "hints": [
+      "A sacred structure found in religious architecture 🏛️",
+      "Where worshippers gather for prayer, meditation, and ceremonies",
+      "Indiana Jones barely escaped the cursed one in Raiders",
+      "A building dedicated to worship of a deity",
+      "From Latin meaning 'sacred space' or 'sanctuary'"
+    ]
+  },
+  {
+    "date": "2025-12-17",
+    "word": "GARDEN",
+    "length": 6,
+    "type": "noun",
+    "category": "nature",
+    "hints": [
+      "A cultivated outdoor space where plants grow 🌱",
+      "Homeowners tend them on weekends, harvesting vegetables or flowers",
+      "Eden was the most famous one in biblical stories",
+      "Plot of land where flowers, vegetables, or herbs are grown",
+      "Rhymes with 'pardon' and 'harden'"
+    ]
+  },
+  {
+    "date": "2025-12-18",
+    "word": "THUNDER",
+    "length": 7,
+    "type": "noun",
+    "category": "weather",
+    "hints": [
+      "A natural sound phenomenon during storms ⛈️",
+      "Always follows lightning but arrives several seconds later",
+      "AC/DC sang about being struck by it",
+      "The deep rumbling sound caused by lightning heating air",
+      "Seven letters, rhymes with 'under' and 'wonder'"
+    ]
+  },
+  {
+    "date": "2025-12-19",
+    "word": "KNIGHT",
+    "length": 6,
+    "type": "noun",
+    "category": "historical",
+    "hints": [
+      "A figure from medieval history and chivalric romance ⚔️",
+      "Served lords in exchange for land, bound by codes of honor",
+      "What King Arthur's Round Table was filled with",
+      "An armored warrior on horseback, often defending the realm",
+      "Sounds like 'night' but spelled with a silent letter"
+    ]
+  },
+  {
+    "date": "2025-12-20",
+    "word": "FIREWORKS",
+    "length": 9,
+    "type": "noun",
+    "category": "celebration",
+    "hints": [
+      "Pyrotechnic displays used for celebrations and festivities 🎆",
+      "Launched from tubes at midnight on New Year's Eve",
+      "What Katy Perry sang about feeling like in her 2010 hit",
+      "Explosive devices that create colorful lights and sounds in the sky",
+      "Nine letters, compound word starting with 'fire'"
+    ]
+  },
+  {
+    "date": "2025-12-21",
+    "word": "MYTHOLOGY",
+    "length": 9,
+    "type": "noun",
+    "category": "culture",
+    "hints": [
+      "Ancient stories and belief systems from cultures worldwide 📚",
+      "Studied in literature classes and referenced in modern storytelling",
+      "Percy Jackson novels brought Greek versions to young readers",
+      "Traditional tales of gods, heroes, and supernatural beings",
+      "From Greek 'mythos' meaning story plus 'logos' meaning study"
+    ]
+  },
+  {
+    "date": "2025-12-22",
+    "word": "MIRACLE",
+    "length": 7,
+    "type": "noun",
+    "category": "wonder",
+    "hints": [
+      "A supernatural event that defies natural laws ✨",
+      "Often attributed to divine intervention in desperate situations",
+      "What the US hockey team achieved at Lake Placid in 1980",
+      "An extraordinary event that seems impossible by natural means",
+      "From Latin meaning 'something wonderful to behold'"
+    ]
+  },
+  {
+    "date": "2025-12-23",
+    "word": "EPIDEMIC",
+    "length": 8,
+    "type": "noun",
+    "category": "medical",
+    "hints": [
+      "A public health concern tracked by medical authorities 🏥",
+      "CDC issues warnings when this spreads rapidly through populations",
+      "What COVID-19 became before WHO declared it a pandemic",
+      "Widespread occurrence of disease affecting many people simultaneously",
+      "From Greek meaning 'upon the people' or 'among the people'"
+    ]
+  },
+  {
+    "date": "2025-12-24",
+    "word": "SPLENDOR",
+    "length": 8,
+    "type": "noun",
+    "category": "quality",
+    "hints": [
+      "A quality of magnificent beauty and grandeur ✨",
+      "Displayed in royal palaces, natural wonders, and ceremonial events",
+      "What Dorothy saw in the Emerald City of Oz",
+      "Impressive magnificence and brilliance that takes your breath away",
+      "British spelling adds a 'u' before the final consonant"
+    ]
+  },
+  {
+    "date": "2025-12-25",
+    "word": "GALAXY",
+    "length": 6,
+    "type": "noun",
+    "category": "space",
+    "hints": [
+      "Found in the vast reaches of space 🌌",
+      "Astronomers study billions of these through powerful telescopes",
+      "Han Solo navigated through one far, far away",
+      "A massive collection of stars, dust, and dark matter",
+      "Six letters, rhymes with 'pal-a-see'"
+    ]
+  },
+  {
+    "date": "2025-12-26",
+    "word": "CHAMPION",
+    "length": 8,
+    "type": "noun",
+    "category": "sports",
+    "hints": [
+      "A title earned in competitive sports and contests 🏆",
+      "Stands atop podiums at Olympics and major tournaments",
+      "What Rocky Balboa became after defeating Apollo Creed",
+      "The winner or victor who defeats all other competitors",
+      "From Old French meaning 'fighter in the field'"
+    ]
+  },
+  {
+    "date": "2025-12-27",
+    "word": "HARMONY",
+    "length": 7,
+    "type": "abstract_noun",
+    "category": "concept",
+    "hints": [
+      "A fundamental concept in both music and relationships 🎵",
+      "Creates beauty when different voices blend together perfectly",
+      "What the Beach Boys mastered in 'Good Vibrations'",
+      "Pleasant agreement or peaceful coexistence between different elements",
+      "From Greek meaning 'joint' or 'fitting together'"
+    ]
+  },
+  {
+    "date": "2025-12-28",
+    "word": "FREEDOM",
+    "length": 7,
+    "type": "abstract_noun",
+    "category": "concept",
+    "hints": [
+      "A fundamental human right and political concept 🗽",
+      "Celebrated on Independence Day and fought for in revolutions",
+      "What Braveheart's William Wallace died shouting for",
+      "The state of being liberated from oppression or constraint",
+      "Rhymes with 'need 'em' when said quickly"
+    ]
+  },
+  {
+    "date": "2025-12-29",
+    "word": "WILDFIRE",
+    "length": 8,
+    "type": "noun",
+    "category": "nature",
+    "hints": [
+      "Natural disaster that threatens forests and communities 🔥",
+      "Firefighters battle these with water drops and firebreaks",
+      "Smokey Bear warns 'Only you can prevent' these",
+      "Uncontrolled blaze that spreads rapidly through vegetation",
+      "Two words combined: untamed plus flame, eight letters total"
+    ]
+  },
+  {
+    "date": "2025-12-30",
+    "word": "CURIOSITY",
+    "length": 9,
+    "type": "abstract_noun",
+    "category": "quality",
+    "hints": [
+      "A powerful driving force behind learning and discovery 🧠",
+      "What scientists feel before experiments and children show constantly",
+      "What killed the cat, according to the famous saying",
+      "An eager desire to know or learn something",
+      "Nine letters, ends in '-ity', shares root with 'curious'"
+    ]
+  },
+  {
+    "date": "2025-12-31",
+    "word": "CATHEDRAL",
+    "length": 9,
+    "type": "noun",
+    "category": "architecture",
+    "hints": [
+      "A magnificent religious building found in cities worldwide ⛪",
+      "Where bishops hold services and major ceremonies take place",
+      "Notre-Dame in Paris is perhaps the world's most famous example",
+      "The principal church of a diocese, containing the bishop's throne",
+      "From Greek meaning 'seat' - referring to the bishop's chair"
+    ]
+  },
+  {
+    "date": "2026-01-01",
+    "word": "REBELLION",
+    "length": 9,
+    "type": "noun",
+    "category": "action",
+    "hints": [
+      "A political and social phenomenon throughout human history ⚔️",
+      "Occurs when groups reject existing authority or established order",
+      "Luke Skywalker joined one against the Galactic Empire",
+      "Organized resistance or uprising against those in power",
+      "From Latin meaning 'to wage war again' or 'renew fighting'"
+    ]
+  },
+  {
+    "date": "2026-01-02",
+    "word": "INVENTION",
+    "length": 9,
+    "type": "noun",
+    "category": "innovation",
+    "hints": [
+      "A product of human creativity and ingenuity 💡",
+      "Often protected by patents and showcased at innovation fairs",
+      "Thomas Edison held over 1,000 patents for these creations",
+      "A novel device, process, or idea created through imagination",
+      "From Latin meaning 'to come upon' or 'discover'"
+    ]
+  },
+  {
+    "date": "2026-01-03",
+    "word": "CRYSTAL",
+    "length": 7,
+    "type": "noun",
+    "category": "mineral",
+    "hints": [
+      "A naturally occurring solid found in geology and mineralogy 💎",
+      "Used in jewelry, electronics, and decorative displays worldwide",
+      "Superman's Fortress of Solitude was built entirely from these",
+      "A solid material with atoms arranged in precise geometric patterns",
+      "Rhymes with 'pistol' and comes from Greek meaning 'ice'"
+    ]
+  },
+  {
+    "date": "2026-01-04",
+    "word": "SERENITY",
+    "length": 8,
+    "type": "abstract_noun",
+    "category": "emotion",
+    "hints": [
+      "A peaceful state of mind and emotional balance 🧘",
+      "Sought through meditation, prayer, or quiet reflection",
+      "The Serenity Prayer asks for wisdom to accept unchangeable things",
+      "Complete tranquility and freedom from disturbance or anxiety",
+      "From Latin meaning 'clear weather' or 'calm sky'"
+    ]
+  },
+  {
+    "date": "2026-01-05",
+    "word": "ISLAND",
+    "length": 6,
+    "type": "noun",
+    "category": "geography",
+    "hints": [
+      "Geographic landform completely surrounded by water 🏝️",
+      "Reached only by boat, plane, or bridge",
+      "Where Robinson Crusoe was stranded for decades",
+      "Isolated piece of land smaller than a continent",
+      "Sounds like 'I' plus something you'd do to land"
+    ]
+  },
+  {
+    "date": "2026-01-06",
+    "word": "AVALANCHE",
+    "length": 9,
+    "type": "noun",
+    "category": "nature",
+    "hints": [
+      "A dangerous natural disaster found in mountainous regions 🏔️",
+      "Ski patrol teams trigger controlled versions to prevent larger ones",
+      "Killed the hockey team in Disney's 'The Mighty Ducks' backstory",
+      "Massive downhill flow of snow, ice, and debris on slopes",
+      "French word meaning 'to descend' combined with suffix for action"
+    ]
+  },
+  {
+    "date": "2026-01-07",
+    "word": "MOUNTAIN",
+    "length": 8,
+    "type": "noun",
+    "category": "geography",
+    "hints": [
+      "A massive geological formation found on every continent 🏔️",
+      "Climbers scale them, hikers traverse their trails, weather forms around them",
+      "Moses received the Ten Commandments atop one",
+      "A natural elevation rising prominently above surrounding land",
+      "From Latin 'montanus' meaning 'of the hills'"
+    ]
+  },
+  {
+    "date": "2026-01-08",
+    "word": "BUTTERFLY",
+    "length": 9,
+    "type": "noun",
+    "category": "animal",
+    "hints": [
+      "A winged insect that undergoes complete metamorphosis 🦋",
+      "Pollinates flowers while feeding on nectar in gardens",
+      "Ray Bradbury wrote about the effect of stepping on one",
+      "Colorful lepidopteran with delicate wings and club-shaped antennae",
+      "Nine letters, compound word combining flying insect with dairy product"
+    ]
+  },
+  {
+    "date": "2026-01-09",
+    "word": "ADVENTURE",
+    "length": 9,
+    "type": "noun",
+    "category": "experience",
+    "hints": [
+      "An exciting experience involving risk and discovery 🗺️",
+      "What travelers seek when exploring unknown territories",
+      "Indiana Jones spent his career pursuing these dangerous quests",
+      "A bold journey or enterprise with uncertain outcome",
+      "From Latin meaning 'to arrive' or 'something about to happen'"
+    ]
+  },
+  {
+    "date": "2026-01-10",
+    "word": "JOURNEY",
+    "length": 7,
+    "type": "noun",
+    "category": "adventure",
+    "hints": [
+      "A form of travel or movement from one place to another 🗺️",
+      "What adventurers embark on and pilgrims undertake for spiritual reasons",
+      "The Fellowship of the Ring began one to destroy the One Ring",
+      "An extended trip or the process of traveling to a destination",
+      "Seven letters, rhymes with 'attorney' without the 'att'"
+    ]
+  },
+  {
+    "date": "2026-01-11",
+    "word": "NIGHTMARE",
+    "length": 9,
+    "type": "noun",
+    "category": "emotion",
+    "hints": [
+      "A disturbing experience that occurs during sleep 😴",
+      "Often causes people to wake up startled or sweating",
+      "Freddy Krueger made these his hunting ground on Elm Street",
+      "A vivid, frightening dream that feels terrifyingly real",
+      "Nine letters, compound word combining darkness and a female horse"
+    ]
+  },
+  {
+    "date": "2026-01-12",
+    "word": "DINOSAUR",
+    "length": 8,
+    "type": "noun",
+    "category": "biology",
+    "hints": [
+      "Ancient creatures that once ruled the Earth 🦕",
+      "Paleontologists dig up their fossilized bones in museums worldwide",
+      "Spielberg brought them back to life in Jurassic Park",
+      "Extinct reptiles that dominated during the Mesozoic Era",
+      "From Greek meaning 'terrible lizard' despite not being lizards"
+    ]
+  },
+  {
+    "date": "2026-01-13",
+    "word": "PUZZLE",
+    "length": 6,
+    "type": "noun",
+    "category": "game",
+    "hints": [
+      "A mental challenge or brain teaser 🧩",
+      "Found in newspapers, toy stores, and escape rooms",
+      "Jigsaw variety featured prominently in horror movie Saw",
+      "A problem designed to test ingenuity or knowledge",
+      "Rhymes with 'muzzle' and comes from obsolete 'pusle'"
+    ]
+  },
+  {
+    "date": "2026-01-14",
+    "word": "ATHLETE",
+    "length": 7,
+    "type": "noun",
+    "category": "sports",
+    "hints": [
+      "Found competing in sports and physical competitions 🏃‍♂️",
+      "Trains rigorously for Olympic Games, championships, and professional leagues",
+      "Michael Jordan, Serena Williams, and Usain Bolt are legendary examples",
+      "A person skilled in sports requiring physical strength and endurance",
+      "From Greek meaning 'one who competes for a prize'"
+    ]
+  },
+  {
+    "date": "2026-01-15",
+    "word": "ORCHESTRA",
+    "length": 9,
+    "type": "noun",
+    "category": "music",
+    "hints": [
+      "A large musical ensemble found in concert halls 🎼",
+      "Performs symphonies and concertos under a conductor's baton",
+      "The Titanic's band famously played as one while sinking",
+      "Group of musicians playing strings, woodwinds, brass, and percussion",
+      "From Greek meaning 'dancing place' in ancient theaters"
+    ]
+  },
+  {
+    "date": "2026-01-16",
+    "word": "MYSTERY",
+    "length": 7,
+    "type": "noun",
+    "category": "abstract",
+    "hints": [
+      "Something unsolved that puzzles detectives and investigators 🔍",
+      "Found in bookstores under its own genre section",
+      "Sherlock Holmes spent his career solving these puzzles",
+      "An unexplained event or puzzle requiring investigation",
+      "Seven letters, rhymes with 'history'"
+    ]
+  },
+  {
+    "date": "2026-01-17",
+    "word": "TREASURE",
+    "length": 8,
+    "type": "noun",
+    "category": "valuable",
+    "hints": [
+      "Valuable objects sought by adventurers and collectors 💰",
+      "Hidden in chests, buried underground, or locked in vaults",
+      "What pirates like Blackbeard buried on remote islands",
+      "Precious metals, gems, or artifacts of great worth",
+      "Eight letters, rhymes with 'measure' and 'pleasure'"
+    ]
+  }
+]

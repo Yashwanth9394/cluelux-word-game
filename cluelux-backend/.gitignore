@@ -1,0 +1,23 @@
+node_modules
+*.js
+!jest.config.js
+*.d.ts
+.env
+
+# CDK
+cdk.out
+.cdk.staging
+
+# Build
+dist
+build
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store

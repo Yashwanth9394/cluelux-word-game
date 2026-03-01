@@ -1,0 +1,10 @@
+{
+  "name": "cluelux-lambda",
+  "version": "1.0.0",
+  "description": "Lambda functions for ClueLux backend",
+  "main": "getDailyWord.js",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.929.0",
+    "@aws-sdk/lib-dynamodb": "^3.929.0"
+  }
+}

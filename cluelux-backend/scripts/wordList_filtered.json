@@ -1,0 +1,527 @@
+[
+  {
+    "word": "DREAMS",
+    "length": 6,
+    "type": "noun",
+    "category": "emotion",
+    "generated": false
+  },
+  {
+    "word": "FOREST",
+    "length": 6,
+    "type": "noun",
+    "category": "nature",
+    "generated": false
+  },
+  {
+    "word": "GALAXY",
+    "length": 6,
+    "type": "noun",
+    "category": "space",
+    "generated": false
+  },
+  {
+    "word": "METEOR",
+    "length": 6,
+    "type": "noun",
+    "category": "space",
+    "generated": false
+  },
+  {
+    "word": "ISLAND",
+    "length": 6,
+    "type": "noun",
+    "category": "geography",
+    "generated": false
+  },
+  {
+    "word": "WISDOM",
+    "length": 6,
+    "type": "abstract_noun",
+    "category": "virtue",
+    "generated": false
+  },
+  {
+    "word": "TEMPLE",
+    "length": 6,
+    "type": "noun",
+    "category": "architecture",
+    "generated": false
+  },
+  {
+    "word": "GARDEN",
+    "length": 6,
+    "type": "noun",
+    "category": "nature",
+    "generated": false
+  },
+  {
+    "word": "CASTLE",
+    "length": 6,
+    "type": "noun",
+    "category": "architecture",
+    "generated": false
+  },
+  {
+    "word": "KNIGHT",
+    "length": 6,
+    "type": "noun",
+    "category": "historical",
+    "generated": false
+  },
+  {
+    "word": "DRAGON",
+    "length": 6,
+    "type": "noun",
+    "category": "mythical",
+    "generated": false
+  },
+  {
+    "word": "WIZARD",
+    "length": 6,
+    "type": "noun",
+    "category": "mystical",
+    "generated": false
+  },
+  {
+    "word": "PUZZLE",
+    "length": 6,
+    "type": "noun",
+    "category": "game",
+    "generated": false
+  },
+  {
+    "word": "ROCKET",
+    "length": 6,
+    "type": "noun",
+    "category": "technology",
+    "generated": false
+  },
+  {
+    "word": "OXYGEN",
+    "length": 6,
+    "type": "noun",
+    "category": "chemistry",
+    "generated": false
+  },
+  {
+    "word": "PHOENIX",
+    "length": 7,
+    "type": "noun",
+    "category": "mythical",
+    "generated": false
+  },
+  {
+    "word": "MYSTERY",
+    "length": 7,
+    "type": "noun",
+    "category": "abstract",
+    "generated": false
+  },
+  {
+    "word": "JOURNEY",
+    "length": 7,
+    "type": "noun",
+    "category": "adventure",
+    "generated": false
+  },
+  {
+    "word": "KINGDOM",
+    "length": 7,
+    "type": "noun",
+    "category": "place",
+    "generated": false
+  },
+  {
+    "word": "LIBRARY",
+    "length": 7,
+    "type": "noun",
+    "category": "place",
+    "generated": false
+  },
+  {
+    "word": "DIAMOND",
+    "length": 7,
+    "type": "noun",
+    "category": "gem",
+    "generated": false
+  },
+  {
+    "word": "THUNDER",
+    "length": 7,
+    "type": "noun",
+    "category": "weather",
+    "generated": false
+  },
+  {
+    "word": "CRYSTAL",
+    "length": 7,
+    "type": "noun",
+    "category": "mineral",
+    "generated": false
+  },
+  {
+    "word": "SUNRISE",
+    "length": 7,
+    "type": "noun",
+    "category": "nature",
+    "generated": false
+  },
+  {
+    "word": "COURAGE",
+    "length": 7,
+    "type": "abstract_noun",
+    "category": "virtue",
+    "generated": false
+  },
+  {
+    "word": "FREEDOM",
+    "length": 7,
+    "type": "abstract_noun",
+    "category": "concept",
+    "generated": false
+  },
+  {
+    "word": "JUSTICE",
+    "length": 7,
+    "type": "abstract_noun",
+    "category": "virtue",
+    "generated": false
+  },
+  {
+    "word": "HARMONY",
+    "length": 7,
+    "type": "abstract_noun",
+    "category": "concept",
+    "generated": false
+  },
+  {
+    "word": "TRIUMPH",
+    "length": 7,
+    "type": "noun",
+    "category": "victory",
+    "generated": false
+  },
+  {
+    "word": "MIRACLE",
+    "length": 7,
+    "type": "noun",
+    "category": "wonder",
+    "generated": false
+  },
+  {
+    "word": "ALCHEMY",
+    "length": 7,
+    "type": "noun",
+    "category": "mystical",
+    "generated": false
+  },
+  {
+    "word": "GRAVITY",
+    "length": 7,
+    "type": "noun",
+    "category": "physics",
+    "generated": false
+  },
+  {
+    "word": "QUANTUM",
+    "length": 7,
+    "type": "noun",
+    "category": "physics",
+    "generated": false
+  },
+  {
+    "word": "ATHLETE",
+    "length": 7,
+    "type": "noun",
+    "category": "sports",
+    "generated": false
+  },
+  {
+    "word": "VOLCANO",
+    "length": 7,
+    "type": "noun",
+    "category": "geology",
+    "generated": false
+  },
+  {
+    "word": "TREASURE",
+    "length": 8,
+    "type": "noun",
+    "category": "valuable",
+    "generated": false
+  },
+  {
+    "word": "UNIVERSE",
+    "length": 8,
+    "type": "noun",
+    "category": "space",
+    "generated": false
+  },
+  {
+    "word": "MOUNTAIN",
+    "length": 8,
+    "type": "noun",
+    "category": "geography",
+    "generated": false
+  },
+  {
+    "word": "CHAMPION",
+    "length": 8,
+    "type": "noun",
+    "category": "sports",
+    "generated": false
+  },
+  {
+    "word": "SYMPHONY",
+    "length": 8,
+    "type": "noun",
+    "category": "music",
+    "generated": false
+  },
+  {
+    "word": "SPLENDOR",
+    "length": 8,
+    "type": "noun",
+    "category": "quality",
+    "generated": false
+  },
+  {
+    "word": "PARADISE",
+    "length": 8,
+    "type": "noun",
+    "category": "place",
+    "generated": false
+  },
+  {
+    "word": "ETERNITY",
+    "length": 8,
+    "type": "abstract_noun",
+    "category": "time",
+    "generated": false
+  },
+  {
+    "word": "INFINITY",
+    "length": 8,
+    "type": "abstract_noun",
+    "category": "concept",
+    "generated": false
+  },
+  {
+    "word": "STRENGTH",
+    "length": 8,
+    "type": "abstract_noun",
+    "category": "quality",
+    "generated": false
+  },
+  {
+    "word": "SERENITY",
+    "length": 8,
+    "type": "abstract_noun",
+    "category": "emotion",
+    "generated": false
+  },
+  {
+    "word": "DARKNESS",
+    "length": 8,
+    "type": "noun",
+    "category": "abstract",
+    "generated": false
+  },
+  {
+    "word": "TWILIGHT",
+    "length": 8,
+    "type": "noun",
+    "category": "time",
+    "generated": false
+  },
+  {
+    "word": "STARSHIP",
+    "length": 8,
+    "type": "noun",
+    "category": "technology",
+    "generated": false
+  },
+  {
+    "word": "WILDFIRE",
+    "length": 8,
+    "type": "noun",
+    "category": "nature",
+    "generated": false
+  },
+  {
+    "word": "DINOSAUR",
+    "length": 8,
+    "type": "noun",
+    "category": "biology",
+    "generated": false
+  },
+  {
+    "word": "MOLECULE",
+    "length": 8,
+    "type": "noun",
+    "category": "chemistry",
+    "generated": false
+  },
+  {
+    "word": "EPIDEMIC",
+    "length": 8,
+    "type": "noun",
+    "category": "medical",
+    "generated": false
+  },
+  {
+    "word": "ASTEROID",
+    "length": 8,
+    "type": "noun",
+    "category": "space",
+    "generated": false
+  },
+  {
+    "word": "MEDIEVAL",
+    "length": 8,
+    "type": "adjective",
+    "category": "historical",
+    "generated": false
+  },
+  {
+    "word": "ADVENTURE",
+    "length": 9,
+    "type": "noun",
+    "category": "experience",
+    "generated": false
+  },
+  {
+    "word": "LABYRINTH",
+    "length": 9,
+    "type": "noun",
+    "category": "structure",
+    "generated": false
+  },
+  {
+    "word": "WHIRLWIND",
+    "length": 9,
+    "type": "noun",
+    "category": "weather",
+    "generated": false
+  },
+  {
+    "word": "AVALANCHE",
+    "length": 9,
+    "type": "noun",
+    "category": "nature",
+    "generated": false
+  },
+  {
+    "word": "HURRICANE",
+    "length": 9,
+    "type": "noun",
+    "category": "weather",
+    "generated": false
+  },
+  {
+    "word": "LIGHTNING",
+    "length": 9,
+    "type": "noun",
+    "category": "weather",
+    "generated": false
+  },
+  {
+    "word": "BUTTERFLY",
+    "length": 9,
+    "type": "noun",
+    "category": "animal",
+    "generated": false
+  },
+  {
+    "word": "CROCODILE",
+    "length": 9,
+    "type": "noun",
+    "category": "animal",
+    "generated": false
+  },
+  {
+    "word": "TELESCOPE",
+    "length": 9,
+    "type": "noun",
+    "category": "technology",
+    "generated": false
+  },
+  {
+    "word": "SATELLITE",
+    "length": 9,
+    "type": "noun",
+    "category": "technology",
+    "generated": false
+  },
+  {
+    "word": "DISCOVERY",
+    "length": 9,
+    "type": "noun",
+    "category": "concept",
+    "generated": false
+  },
+  {
+    "word": "SANCTUARY",
+    "length": 9,
+    "type": "noun",
+    "category": "place",
+    "generated": false
+  },
+  {
+    "word": "CATHEDRAL",
+    "length": 9,
+    "type": "noun",
+    "category": "architecture",
+    "generated": false
+  },
+  {
+    "word": "MYTHOLOGY",
+    "length": 9,
+    "type": "noun",
+    "category": "culture",
+    "generated": false
+  },
+  {
+    "word": "ORCHESTRA",
+    "length": 9,
+    "type": "noun",
+    "category": "music",
+    "generated": false
+  },
+  {
+    "word": "INVENTION",
+    "length": 9,
+    "type": "noun",
+    "category": "innovation",
+    "generated": false
+  },
+  {
+    "word": "NIGHTMARE",
+    "length": 9,
+    "type": "noun",
+    "category": "emotion",
+    "generated": false
+  },
+  {
+    "word": "FIREWORKS",
+    "length": 9,
+    "type": "noun",
+    "category": "celebration",
+    "generated": false
+  },
+  {
+    "word": "CURIOSITY",
+    "length": 9,
+    "type": "abstract_noun",
+    "category": "quality",
+    "generated": false
+  },
+  {
+    "word": "REBELLION",
+    "length": 9,
+    "type": "noun",
+    "category": "action",
+    "generated": false
+  }
+]

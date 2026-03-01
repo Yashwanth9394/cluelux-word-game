@@ -1,0 +1,52 @@
+[
+  {
+    "date": "2025-11-12",
+    "word": "LIGHT",
+    "hints": [
+      "Category: Illumination",
+      "You turn this on in a dark room",
+      "Opposite of darkness"
+    ],
+    "fact": "The speed of light is 299,792,458 meters per second, making it the fastest thing in the universe!"
+  },
+  {
+    "date": "2025-11-13",
+    "word": "BRAIN",
+    "hints": [
+      "Category: Anatomy",
+      "The control center of your body",
+      "You use this to think"
+    ],
+    "fact": "The human brain contains approximately 86 billion neurons and uses about 20% of the body's energy!"
+  },
+  {
+    "date": "2025-11-14",
+    "word": "OCEAN",
+    "hints": [
+      "Category: Geography",
+      "Covers most of Earth's surface",
+      "Home to whales and sharks"
+    ],
+    "fact": "The ocean covers more than 70% of Earth's surface and contains 97% of all water on the planet!"
+  },
+  {
+    "date": "2025-11-15",
+    "word": "MUSIC",
+    "hints": [
+      "Category: Arts",
+      "Made of melodies and rhythms",
+      "You listen to this for enjoyment"
+    ],
+    "fact": "Music can trigger the release of dopamine in your brain, the same chemical released when you eat chocolate!"
+  },
+  {
+    "date": "2025-11-16",
+    "word": "SPACE",
+    "hints": [
+      "Category: Astronomy",
+      "The final frontier",
+      "Where stars and planets exist"
+    ],
+    "fact": "Space is completely silent because there are no air molecules to carry sound waves!"
+  }
+]
