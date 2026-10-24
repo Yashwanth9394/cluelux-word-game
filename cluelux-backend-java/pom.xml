@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.cluelux</groupId>
+  <artifactId>cluelux-backend</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+
+  <!-- Java port of the ClueLux backend (previously TypeScript/Node.js).
+       Two modules: `lambda` (the function that serves the daily word to
+       players) and `infra` (the CDK app that provisions DynamoDB, the
+       Lambda, API Gateway and CloudFront). `infra` references the jar
+       `lambda` builds, so build order is lambda first, infra second -
+       see each module's README note. -->
+  <modules>
+    <module>lambda</module>
+    <module>infra</module>
+  </modules>
+
+  <properties>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <aws.cdk.version>2.223.0</aws.cdk.version>
+    <constructs.version>10.4.3</constructs.version>
+  </properties>
+</project>

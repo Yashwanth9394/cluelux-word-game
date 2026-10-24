@@ -1,19 +1,10 @@
 {
   "name": "cluelux-backend",
   "version": "1.0.0",
-  "description": "Backend API for ClueLux game with AWS CDK",
+  "description": "Content tooling for ClueLux (word/hint generation + QA). The deployable backend is cluelux-backend-java/ - this package no longer owns any CDK/Lambda deploy path.",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cdk": "cdk",
-    "cdk:bootstrap": "cdk bootstrap",
-    "cdk:synth": "cdk synth",
-    "cdk:diff": "cdk diff",
-    "cdk:deploy": "cdk deploy",
-    "cdk:destroy": "cdk destroy",
-    "deploy": "npm run build && cdk deploy --require-approval never",
     "seed": "node data/seed.js",
     "generate:words": "node scripts/generateWords.js",
     "progress": "node scripts/checkProgress.js",
@@ -21,26 +12,14 @@
   },
   "keywords": [
     "cluelux",
-    "aws",
-    "lambda",
-    "dynamodb",
-    "cdk"
+    "word-generation",
+    "dynamodb"
   ],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@types/aws-lambda": "^8.10.157",
-    "@types/node": "^24.10.1",
-    "aws-cdk-lib": "^2.223.0",
-    "constructs": "^10.4.3",
-    "esbuild": "^0.27.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
-  },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.68.0",
     "@aws-sdk/client-dynamodb": "^3.929.0",
-    "@aws-sdk/lib-dynamodb": "^3.929.0",
-    "source-map-support": "^0.5.21"
+    "@aws-sdk/lib-dynamodb": "^3.929.0"
   }
 }
