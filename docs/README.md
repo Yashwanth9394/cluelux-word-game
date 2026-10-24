@@ -32,6 +32,7 @@ cluelux-app/
 | [testing.md](./testing.md) | Current (minimal) automated test coverage and how to manually verify changes |
 | [deployment.md](./deployment.md) | How the frontend (Amplify) and backend (CDK) are deployed, env vars, costs |
 | [responsive-verification.md](./responsive-verification.md) | Real screenshots of the game board at 6-9 letters, at phone and tablet widths |
+| [mistakes/log.md](./mistakes/log.md) | Real mistakes made building this, in order - what went wrong, how it was caught, what changed |
 
 ## Quick start (local dev)
 
