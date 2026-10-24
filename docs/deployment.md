@@ -46,36 +46,34 @@ DynamoDB on-demand, Lambda, and API Gateway all have generous AWS free tiers (Dy
 - **API returns 500**: per `GetDailyWordHandler.java`, only happens on an actual thrown exception (e.g. DynamoDB permission error) — check CloudWatch logs and the `TABLE_NAME` env var on the function.
 - **Prod stack shows unexpected changes in `cdk diff`**: stop and read the diff carefully before deploying — the whole point of having moved to this Java setup was verifying `cdk diff` shows *exactly* the expected changes, nothing more (see the resource-ID-matching rationale in `ClueLuxBackendStack.java`'s class comment).
 
-## Frontend — open decision, not yet deployed
+## Frontend — AWS Amplify, two branches (prod + UAT)
 
-**Important finding, not yet acted on:** there's an existing AWS Amplify app already connected to the frontend's GitHub repo.
+**Decided: Option A (Amplify) — the alternative fresh S3+CloudFront+ACM build was never built and is no longer planned.**
 
 ```
 App: cluelux-frontend (d12ua58fdpbtag)
 Repo: https://github.com/Yashwanth9394/cluelux-frontend
-Production branch: master, last successful deploy 2025-11-16
-Default domain: d12ua58fdpbtag.amplifyapp.com
-Custom domain: cluelux.com — status FAILED
-  Reason: DNS verification CNAME was never published at the registrar (Hostinger)
 ```
 
-This means there are now **two valid paths** to get `cluelux.com` live, and nobody has picked one yet:
+| | `master` (prod) | `uat` |
+|---|---|---|
+| Live at | `https://master.d12ua58fdpbtag.amplifyapp.com` | `https://uat.d12ua58fdpbtag.amplifyapp.com` |
+| `VITE_API_URL` | `https://d2g37ugrz9k0kj.cloudfront.net` (prod CloudFront) | `https://2ju9d2h9pj.execute-api.us-east-1.amazonaws.com/prod` (UAT API Gateway direct - no CloudFront in front of UAT) |
+| Builds on | every push to `master` | every push to `uat` |
+| Custom domain | `cluelux.com` - **still pending**, see below | none |
 
-**Option A — finish the existing Amplify path (likely much less work)**
-1. In the Amplify console (or via `aws amplify get-domain-association`), get the exact pending CNAME verification record and the subdomain CNAME target.
-2. Publish those as DNS records at Hostinger.
-3. Wait for Amplify to re-verify (it polls automatically) — Amplify provisions and manages the ACM certificate itself once verified.
-4. Set `VITE_API_URL` in the Amplify app's build environment variables (not a committed file) to the backend's CloudFront URL, `https://d2g37ugrz9k0kj.cloudfront.net`.
-5. Confirm the `master` branch is still current (it hasn't deployed since Nov 2025 — a fresh push/build is almost certainly needed to pick up everything built this session: the keyboard fix, PWA assets, hint-reveal sequencing, etc.).
+### `cluelux.com` custom domain — pending, one DNS step left
+Amplify already has a domain association for `cluelux.com` in `FAILED` state (DNS verification CNAME was never published at Hostinger). To finish:
+1. `aws amplify get-domain-association --app-id d12ua58fdpbtag --domain-name cluelux.com` for the exact pending CNAME verification record and the subdomain CNAME target.
+2. Publish those as DNS records at Hostinger (apex via Hostinger's ALIAS record type - confirmed supported).
+3. Wait for Amplify to re-verify (polls automatically) - it provisions and manages the ACM certificate itself once verified.
 
-**Option B — fresh S3 + CloudFront + ACM build (designed this session, zero AWS resources actually created yet)**
-1. `npm run build` → `dist/`.
-2. Request an ACM cert (`us-east-1`) for `cluelux.com` + `www.cluelux.com`; validate via a Hostinger DNS CNAME.
-3. Add an S3 bucket + new CloudFront distribution to the CDK stack (would need a frontend-hosting construct added to `cluelux-backend-java/infra/` or a separate stack — not yet written).
-4. Upload `dist/` to the bucket, invalidate the CloudFront cache.
-5. Point Hostinger's DNS at the new CloudFront distribution: `cluelux.com` (apex) via an ALIAS record (confirmed Hostinger supports this), `www.cluelux.com` via CNAME.
+### Workflow: develop → UAT → promote
 
-Option A reuses infrastructure that already mostly works and just needs its DNS step finished; Option B is a clean, fully CDK-managed build matching the backend's infra-as-code pattern, but means standing up new resources and duplicating what Amplify already does for free (build pipeline, cert management, CDN). Decide, then update this doc to remove whichever option wasn't chosen.
+1. Work on the `uat` branch. Push → Amplify auto-builds `uat`, live against the UAT *backend* within a couple minutes - a real shareable URL, not just a local dev server.
+2. For a backend change alongside it: `cdk deploy ClueLuxBackendStackUAT` manually (CDK doesn't auto-deploy on push the way Amplify does).
+3. Test against the `uat` branch URL until satisfied.
+4. Promote: merge `uat` → `master` (triggers the prod Amplify build), then tag the commit: `git tag -a v2026.11.02 -m "description" && git push --tags`. For the backend, deploy the *same* already-built jar to prod rather than rebuilding - see "Build-once, promote" above.
 
 ### PWA note (applies to either option)
 `public/sw.js` + `public/manifest.webmanifest` only activate in a production build (`import.meta.env.PROD` gate in `main.tsx`) — confirm the install prompt and offline shell actually work once either deploy path is live, not just in local dev.
