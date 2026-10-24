@@ -17,6 +17,22 @@ Both are defined in `cluelux-backend-java/infra/src/main/java/com/cluelux/infra/
 
 Both run the identical Lambda code (`lambda/src/main/java/com/cluelux/lambda/GetDailyWordHandler.java`) — same jar, same handler class, same logic. UAT exists to test that code against its own isolated table before it ever touches the prod table.
 
+## Monitoring — prod only
+
+Dashboard: **ClueLux-Prod** in CloudWatch (console → CloudWatch → Dashboards) — API request count/4xx/5xx, API latency, Lambda invocations/errors/throttles/duration, DynamoDB consumed read capacity.
+
+5 alarms, all notifying one SNS topic (`cluelux-prod-alarms`) with an email subscription to `yashwanth753@gmail.com` — **the subscription has to be confirmed via the link AWS emails on first deploy, or it's silently inert**:
+
+| Alarm | Fires when |
+|---|---|
+| `ClueLux-LambdaErrors` | ≥1 Lambda error in 5 min |
+| `ClueLux-LambdaThrottles` | ≥1 Lambda throttle in 5 min |
+| `ClueLux-LambdaDurationHigh` | p99 duration >15s (timeout is 20s) over 2 consecutive 5-min periods |
+| `ClueLux-Api5xxErrors` | ≥1 API Gateway 5xx in 5 min |
+| `ClueLux-DynamoDbThrottles` | ≥1 DynamoDB throttled request in 5 min |
+
+Thresholds are deliberately 1, not some higher burst count — this is low-traffic, so a single error is worth knowing about immediately, not just a spike of them. Deliberately prod-only: paging for UAT test traffic isn't useful, so `ClueLuxUatStack.java` has none of this.
+
 ## Lambda — `GetDailyWordHandler.java`
 
 Java 21, `RequestHandler<APIGatewayProxyRequestEvent, APIGatewayProxyResponseEvent>`, packaged as a shaded (fat) jar via `lambda/pom.xml`'s `maven-shade-plugin`.
