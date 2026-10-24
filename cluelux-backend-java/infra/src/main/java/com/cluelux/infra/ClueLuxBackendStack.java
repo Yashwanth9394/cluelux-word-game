@@ -12,6 +12,16 @@ import software.amazon.awscdk.services.apigateway.LambdaIntegration;
 import software.amazon.awscdk.services.apigateway.Resource;
 import software.amazon.awscdk.services.apigateway.RestApi;
 import software.amazon.awscdk.services.apigateway.RestApiProps;
+import software.amazon.awscdk.services.cloudwatch.Alarm;
+import software.amazon.awscdk.services.cloudwatch.ComparisonOperator;
+import software.amazon.awscdk.services.cloudwatch.Dashboard;
+import software.amazon.awscdk.services.cloudwatch.GraphWidget;
+import software.amazon.awscdk.services.cloudwatch.Metric;
+import software.amazon.awscdk.services.cloudwatch.MetricOptions;
+import software.amazon.awscdk.services.cloudwatch.TreatMissingData;
+import software.amazon.awscdk.services.cloudwatch.actions.SnsAction;
+import software.amazon.awscdk.services.sns.Topic;
+import software.amazon.awscdk.services.sns.subscriptions.EmailSubscription;
 import software.amazon.awscdk.services.cloudfront.AllowedMethods;
 import software.amazon.awscdk.services.cloudfront.BehaviorOptions;
 import software.amazon.awscdk.services.cloudfront.CacheCookieBehavior;
@@ -150,6 +160,126 @@ public class ClueLuxBackendStack extends Stack {
         .value(wordsTable.getTableName())
         .description("DynamoDB Table Name")
         .exportName("ClueLuxWordsTableName")
+        .build());
+
+    // ---- Monitoring: alarms (email) + a dashboard. Prod only - a test
+    // environment paging someone for test traffic isn't useful, so UAT
+    // deliberately has none of this. ----
+
+    Topic alarmTopic = new Topic(this, "AlarmTopic", software.amazon.awscdk.services.sns.TopicProps.builder()
+        .topicName("cluelux-prod-alarms")
+        .build());
+    alarmTopic.addSubscription(new EmailSubscription("yashwanth753@gmail.com"));
+    SnsAction notify = new SnsAction(alarmTopic);
+
+    Alarm lambdaErrors = Alarm.Builder.create(this, "LambdaErrorsAlarm")
+        .alarmName("ClueLux-LambdaErrors")
+        .alarmDescription("Any Lambda error - low-traffic app, a single error is worth knowing about")
+        .metric(getDailyWordFunction.metricErrors(MetricOptions.builder()
+            .period(Duration.minutes(5)).statistic("Sum").build()))
+        .threshold(1)
+        .evaluationPeriods(1)
+        .comparisonOperator(ComparisonOperator.GREATER_THAN_OR_EQUAL_TO_THRESHOLD)
+        .treatMissingData(TreatMissingData.NOT_BREACHING)
+        .build();
+    lambdaErrors.addAlarmAction(notify);
+
+    Alarm lambdaThrottles = Alarm.Builder.create(this, "LambdaThrottlesAlarm")
+        .alarmName("ClueLux-LambdaThrottles")
+        .alarmDescription("Lambda is being throttled - requests are being rejected outright")
+        .metric(getDailyWordFunction.metricThrottles(MetricOptions.builder()
+            .period(Duration.minutes(5)).statistic("Sum").build()))
+        .threshold(1)
+        .evaluationPeriods(1)
+        .comparisonOperator(ComparisonOperator.GREATER_THAN_OR_EQUAL_TO_THRESHOLD)
+        .treatMissingData(TreatMissingData.NOT_BREACHING)
+        .build();
+    lambdaThrottles.addAlarmAction(notify);
+
+    Alarm lambdaDurationHigh = Alarm.Builder.create(this, "LambdaDurationAlarm")
+        .alarmName("ClueLux-LambdaDurationHigh")
+        .alarmDescription("p99 duration above 15s - approaching the 20s timeout")
+        .metric(getDailyWordFunction.metricDuration(MetricOptions.builder()
+            .period(Duration.minutes(5)).statistic("p99").build()))
+        .threshold(15000) // ms
+        .evaluationPeriods(2)
+        .comparisonOperator(ComparisonOperator.GREATER_THAN_THRESHOLD)
+        .treatMissingData(TreatMissingData.NOT_BREACHING)
+        .build();
+    lambdaDurationHigh.addAlarmAction(notify);
+
+    Alarm api5xx = Alarm.Builder.create(this, "Api5xxAlarm")
+        .alarmName("ClueLux-Api5xxErrors")
+        .alarmDescription("Any 5xx from API Gateway - low-traffic app, a single server error is worth knowing about")
+        .metric(api.metricServerError(MetricOptions.builder()
+            .period(Duration.minutes(5)).statistic("Sum").build()))
+        .threshold(1)
+        .evaluationPeriods(1)
+        .comparisonOperator(ComparisonOperator.GREATER_THAN_OR_EQUAL_TO_THRESHOLD)
+        .treatMissingData(TreatMissingData.NOT_BREACHING)
+        .build();
+    api5xx.addAlarmAction(notify);
+
+    // Not a CDK helper method (Table doesn't expose a stable one across
+    // versions for this) - built directly against the raw CloudWatch metric.
+    Metric ddbThrottledRequests = Metric.Builder.create()
+        .namespace("AWS/DynamoDB")
+        .metricName("ThrottledRequests")
+        .dimensionsMap(Map.of("TableName", wordsTable.getTableName()))
+        .statistic("Sum")
+        .period(Duration.minutes(5))
+        .build();
+
+    Alarm ddbThrottleAlarm = Alarm.Builder.create(this, "DynamoDbThrottleAlarm")
+        .alarmName("ClueLux-DynamoDbThrottles")
+        .alarmDescription("DynamoDB is throttling requests - shouldn't happen on-demand billing")
+        .metric(ddbThrottledRequests)
+        .threshold(1)
+        .evaluationPeriods(1)
+        .comparisonOperator(ComparisonOperator.GREATER_THAN_OR_EQUAL_TO_THRESHOLD)
+        .treatMissingData(TreatMissingData.NOT_BREACHING)
+        .build();
+    ddbThrottleAlarm.addAlarmAction(notify);
+
+    Dashboard dashboard = Dashboard.Builder.create(this, "ClueLuxDashboard")
+        .dashboardName("ClueLux-Prod")
+        .build();
+
+    dashboard.addWidgets(
+        GraphWidget.Builder.create()
+            .title("API requests (count / 4xx / 5xx)")
+            .left(List.of(api.metricCount(), api.metricClientError(), api.metricServerError()))
+            .width(12).height(6)
+            .build(),
+        GraphWidget.Builder.create()
+            .title("API latency")
+            .left(List.of(api.metricLatency()))
+            .width(12).height(6)
+            .build());
+
+    dashboard.addWidgets(
+        GraphWidget.Builder.create()
+            .title("Lambda (invocations / errors / throttles)")
+            .left(List.of(getDailyWordFunction.metricInvocations(), getDailyWordFunction.metricErrors(), getDailyWordFunction.metricThrottles()))
+            .width(12).height(6)
+            .build(),
+        GraphWidget.Builder.create()
+            .title("Lambda duration")
+            .left(List.of(getDailyWordFunction.metricDuration()))
+            .width(12).height(6)
+            .build());
+
+    dashboard.addWidgets(
+        GraphWidget.Builder.create()
+            .title("DynamoDB consumed read capacity")
+            .left(List.of(wordsTable.metricConsumedReadCapacityUnits()))
+            .width(24).height(6)
+            .build());
+
+    new CfnOutput(this, "DashboardUrl", CfnOutputProps.builder()
+        .value("https://" + this.getRegion() + ".console.aws.amazon.com/cloudwatch/home?region="
+            + this.getRegion() + "#dashboards:name=" + dashboard.getDashboardName())
+        .description("CloudWatch dashboard - request counts, error rates, latency, Lambda, DynamoDB")
         .build());
   }
 }
